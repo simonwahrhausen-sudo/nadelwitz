@@ -1,0 +1,21 @@
+@font-face{font-family:"Lilita One";src:url("schrift/LilitaOne-Regular.ttf") format("truetype");font-display:swap}
+:root{--grund:#FBF4E8;--text:#2B231E;--leise:#6B5D52;--akzent:#9C3D2E;--karte:#FFFFFF;--linie:#E7DCCB}
+@media (prefers-color-scheme:dark){:root{--grund:#1E1A17;--text:#F4EBDD;--leise:#C9B9A6;--akzent:#FFAA95;--karte:#2A2420;--linie:#3E352E}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--grund);color:var(--text);font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+main,header,footer{max-width:880px;margin:0 auto;padding:0 16px}
+header{padding-top:28px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.marke{font:400 34px/1 "Lilita One",system-ui,sans-serif;color:var(--akzent);text-decoration:none}
+nav a{color:var(--text);margin-right:14px;text-decoration:none;font-weight:600}
+nav a:hover,nav a:focus-visible{text-decoration:underline}
+h1{font:400 clamp(30px,6vw,46px)/1.15 "Lilita One",system-ui,sans-serif;margin:34px 0 10px}
+h2{font-size:21px;margin:30px 0 8px}
+.knopf{display:inline-block;background:var(--akzent);color:#fff;padding:12px 20px;border-radius:12px;text-decoration:none;font-weight:700;margin:10px 10px 0 0}
+@media (prefers-color-scheme:dark){.knopf{color:#1E1A17}}
+.zweit{background:transparent;color:var(--akzent);border:2px solid var(--akzent)}
+.raster{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px;margin:26px 0}
+.raster img{width:100%;height:auto;border-radius:14px;display:block;background:var(--karte);border:1px solid var(--linie)}
+.leise{color:var(--leise);font-size:15px}
+footer{border-top:1px solid var(--linie);margin-top:40px;padding:18px 16px 34px;font-size:15px;color:var(--leise)}
+footer a{color:var(--leise)}
+address{font-style:normal}
